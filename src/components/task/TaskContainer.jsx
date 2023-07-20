@@ -3,6 +3,7 @@ import trash from "./akar-icons_trash-can.svg";
 import TaskCheckBox from "../taskCheckbox/TaskCheckbox";
 
 export default function Task({ trashCan, data, setData }) {
+  //This function handles deleting of existing task from the task container.
   function deleteTask(id) {
     const newData = [...data];
     const indexOfData = newData.findIndex((todo) => todo.id === id);
@@ -10,6 +11,7 @@ export default function Task({ trashCan, data, setData }) {
     setData(newData);
   }
 
+  //This function handles changing checkbox value from checked to unchecked or vice versa.
   function changeCheckbox(id) {
     const foundTask = data.find((todo) => todo.id === id);
     if (foundTask) {

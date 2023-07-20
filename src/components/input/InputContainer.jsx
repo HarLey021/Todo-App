@@ -13,17 +13,19 @@ export default function InputContainer({
   setData,
   data,
 }) {
-  const [checkBox, setCheckBox] = useState(false);
+  const [checkBox, setCheckBox] = useState(false); //Creating state for checkbox.
 
   const currentTime = new Date();
   const timeOptions = { hour: "numeric", minute: "numeric", hour12: true };
-  const formattedTime = currentTime.toLocaleTimeString("en-US", timeOptions);
+  const formattedTime = currentTime.toLocaleTimeString("en-US", timeOptions); //Getting current time.
 
+  //This function sets the input value to input state. Input value is the name for a task component that's gonna be created.
   function handleInput(event) {
     const taskInputValue = event.target.value;
     setInput(taskInputValue);
   }
 
+  //This function creates new task component with task name that is typed in input, when the green task adder button is clicked. Also uses uuid for unique ids for every task.
   function handleAddBtnClick() {
     const myUUID = uuidv4();
     if (input !== "") {

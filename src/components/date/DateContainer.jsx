@@ -11,7 +11,7 @@ export default function DateContainer() {
     const intervalId = setInterval(() => {
       setCurrentDate(new Date());
       setCurrentTime(new Date());
-    }, 1000); // Update every second
+    }, 1000); // Updating time every second.
 
     return () => {
       clearInterval(intervalId);
@@ -23,7 +23,7 @@ export default function DateContainer() {
     .toLocaleDateString("en-US", dateOptions)
     .split(" ")
     .reverse()
-    .join(" ");
+    .join(" "); //Reversing time formatting.
 
   const timeOptions = { hour: "numeric", minute: "numeric", hour12: true };
   const formattedTime = currentTime.toLocaleTimeString("en-US", timeOptions);
