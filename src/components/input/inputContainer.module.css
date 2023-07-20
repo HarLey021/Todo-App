@@ -1,0 +1,51 @@
+.inputContainer {
+  width: 373px;
+  height: 49px;
+  gap: 10px;
+  margin: 23px auto 36px auto;
+  display: flex;
+  position: relative;
+}
+
+.taskInput {
+  background: #ebeff2;
+  width: 275px;
+  height: 49px;
+  border-radius: 5px;
+  border: none;
+  padding: 12px 0px 13px 48px;
+
+  color: #0d0d0d;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.taskInput::placeholder {
+  color: #888;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.addBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 88px;
+  height: 100%;
+  border-radius: 5px;
+  border: none;
+  background: #20eeb0;
+}
+
+.addBtn:hover {
+  cursor: pointer;
+}
+
+.plusSVG path {
+  width: 16px;
+  height: 16px;
+  stroke-width: 2px;
+  stroke: #fff;
+}

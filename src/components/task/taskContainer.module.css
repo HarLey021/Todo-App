@@ -1,0 +1,40 @@
+.taskContainer {
+  width: 373px;
+  margin: 0 auto 24px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.taskDateContainer {
+  width: 117px;
+  height: 44px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.taskConditionContainer {
+  width: 62px;
+  height: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.taskTitle {
+  color: #0d0d0d;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.taskDate {
+  color: #888;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.trashCan {
+  cursor: pointer;
+}

@@ -1,0 +1,25 @@
+.body {
+  width: 100%;
+  height: 100vh;
+  background: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  font-family: "Russo One", sans-serif;
+}
+
+.mainContainer {
+  width: 962px;
+  height: 636px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todoTitle {
+  color: #007fdb;
+  font-family: Inter;
+  font-size: 96px;
+  font-weight: 700;
+}
