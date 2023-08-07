@@ -42,7 +42,7 @@ export default function InputContainer({
           id: myUUID,
         },
       ]);
-    } else {
+    } else if (input !== "") {
       setTask("");
       setTime("");
       setTrashCan(false);
